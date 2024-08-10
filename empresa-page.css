@@ -1,0 +1,357 @@
+body {
+    margin: 0px !important;
+}
+
+section#subheader {
+    background-color: #3d4c37;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 40px;
+}
+
+#subheader .container-bg-style h2 {
+    opacity: 0;
+}
+
+section#header {
+    margin-top: 37px;
+    background-color: #558d40;
+    color: white;
+}
+
+section#header .menu {
+    list-style: none;
+    display: flex;
+}
+
+.container-header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 120px;
+}
+
+.agrinho-editions-img {
+    height: 70px;
+    animation: left-intro 4s forwards 1;
+    transition: all 2s;
+}
+
+.editions-img-slide img{
+        height: 100%;
+        width: 100%;
+}
+
+section#header a.item-menu {
+    margin-left: 40px;
+    transition: all 1s;
+    animation: top-intro 2s forwards 1;
+    padding: 11px;
+    color: white;
+    text-decoration: none;
+}
+
+section#header a.item-menu:hover {
+    color: darkgreen;
+    scale: 1.2;
+    transform: translateY(-10px);
+    border: 1px solid;
+}
+
+.editions-img-slide {
+    height: 100%;
+    width: 100%;
+}
+
+#slides .text-and-btn {
+    color: white;
+    position: absolute;
+    left: 10%;
+    top: 45%;
+    animation: left-intro 3s forwards 1;
+}
+
+@keyframes left-intro {
+    from {
+        transform: translatex(-100%)
+    }
+
+    to {
+        transform: translatex(0%)
+    }
+}
+
+@keyframes right-intro {
+    from {
+        transform: translatex(200%)
+    }
+
+    to {
+        transform: translatex(0%)
+    }
+}
+
+@keyframes top-intro {
+    from {
+        transform: translatey(-600%)
+    }
+
+    to {
+        transform: translatey(0%)
+    }
+}
+
+#slides .text-and-btn h2 {
+    font-size: 50px;
+}
+
+#slides .text-and-btn p {
+    font-size: 30px;
+    margin-top: -35px;
+}
+
+.btn-slide-editions {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+    background-color: #558d40;
+    padding: 15px 25px 15px 25px;
+    border-radius: 10px;
+    transition: all 1s;
+}
+
+a.btn-slide-editions:hover {
+    background-color: #3d4c37;
+    border-radius: 40px;
+}
+
+.agrinho-editions-img:hover {
+    scale: 1.5;
+}
+
+.geral-sobre-agrinho {
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+section#sobre-agrinho {
+    margin: 10%;
+}
+
+.col-md-5 {
+    /* width: 750px; */
+    /* margin-left: 10px; */
+    margin-right: 90px;
+    font-size: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.col-md-7 {
+    width: 500px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.effects-slides {
+    position: absolute;
+    animation: carrosel-slides 30s infinite ease-in-out;
+}
+
+.effects-slides img {
+    opacity: 0.5;
+    height: 130px;
+}
+
+
+@keyframes carrosel-slides {
+    0% {
+        translate: 0 0;
+    }
+
+    20% {
+        translate: -100px 0;
+    }
+
+    40% {
+        translate: -200px 0;
+    }
+
+    60% {
+        translate: -150px 0;
+    }
+
+    80% {
+        translate: -100px 0;
+    }
+
+    100% {
+        translate: 0 0;
+    }
+}
+
+.sobre-agrinho-content h2 {
+    margin-top: -40px;
+    font-size: 70px;
+    margin-bottom: 0px;
+    color: darkgreen;
+    margin-left: -60px;
+}
+
+a.btn-sobre-o-agrinho {
+    text-decoration: none;
+    border: 1px solid green;
+    padding: 15px;
+    color: green;
+    transition: all 1s;
+    border-radius: 10px;
+}
+
+.btn-sobre-o-agrinho:hover {
+    background-color: green;
+    color: white;
+    box-shadow: 0px 0px 30px 5px green;
+}
+
+.botao-sobre-o-agrinho {
+    margin-top: 40px;
+}
+
+.sobre-agrinho-img-editions:hover {
+    scale: 1.14;
+}
+
+.sobre-agrinho-img-editions {
+    transition: all 1s;
+}
+
+.title-and-icon-agrinho {
+    display: flex;
+}
+
+.editions-trigo-agrinho.right-wheat {
+    height: 50px;
+    margin-top: -20px;
+    margin-left: 10px;
+    transform: translateX(-50px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.editions-trigo-agrinho.left-wheat {
+    height: 50px;
+    margin-top: -20px;
+    margin-left: 10px;
+    transform: translateX(-10px);
+    opacity: 0;
+    transition: all 1s;
+}
+
+.sobre-agrinho-content:has(.title-and-icon-agrinho:hover) .left-wheat {
+    opacity: 1;
+    transform: translateX(-70px);
+}
+
+.sobre-agrinho-content:has(.title-and-icon-agrinho:hover) .right-wheat {
+    opacity: 1;
+    transform: translateX(0px);
+}
+
+.row {
+    height: 100%;
+    width: 100%;
+    margin: 100px 0px 100px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#capa-after-header img {
+    height: 100%;
+    width: 100%;
+    filter: brightness(0.5);
+    z-index: -1;
+}
+
+section#capa-after-header::before {
+    content: "SOBRE O AGRINHO";
+    position: absolute;
+    left: 45%;
+    bottom: 60%;
+    color: white;
+    font-size: 38px;
+    border-bottom: 1px solid;
+    z-index: 1;
+    animation: right-intro 2.5s forwards;
+}
+.sobre-agrinho-img-editions img {
+    height: 380px;
+}
+
+.container-footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.line {
+    height: 1px;
+    width: 100%;
+    background-color: white;
+    margin-bottom: 15px;
+}
+
+.footer-left {
+    width: 500px;
+}
+
+section#footer {
+    background-color: #558D41;
+    padding: 30px 0px 60px 0px;
+}
+
+.line-information {
+    height: 1px;
+    width: 30px;
+    background-color: white;
+    margin-right: 20px;
+    transition: all 1s;
+}
+
+.d-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.informations-cc {
+    color: white;
+}
+
+.informations-cc h4 {
+    font-size: 18px;
+    transition: all 1s;
+}
+
+.footer-img:hover {
+    scale: 1.1;
+}
+
+.footer-img {
+    transition: all 1s;
+    height: 100px;
+}
+
+.d-flex:hover .line-information {
+    transform: translateX(-10px);
+}
+
+.informations-cc h4:hover {
+    scale: 1.02;
+    transform: translateY(-10px);
+}
